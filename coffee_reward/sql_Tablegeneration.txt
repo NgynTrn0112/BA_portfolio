@@ -1,0 +1,66 @@
+Drop table if exists promotion_received;
+Drop table if exists promotion_completed;
+
+CREATE table promotion_received (
+	id BIGINT GENERATED ALWAYS AS IDENTITY,
+	customer_id VARCHAR(50),
+	offer_id VARCHAR(50),
+	time INTEGER
+);
+
+CREATE table promotion_completed (
+	id BIGINT GENERATED ALWAYS AS IDENTITY,
+	customer_id VARCHAR(50),
+	offer_id VARCHAR(50),
+	time INTEGER
+);
+
+COPY promotion_received(customer_id, offer_id, time)
+FROM '/tmp/cafre_reward/promotion_received.csv'
+WITH (FORMAT csv, HEADER);
+
+COPY promotion_completed(customer_id, offer_id, time)
+FROM '/tmp/cafre_reward/promotion_completed.csv'
+WITH (FORMAT csv, HEADER);
+
+WITH
+	receive AS (
+		SELECT 
+			customer_id,
+			offer_id,
+			time,
+			ROW_NUMBER() OVER(
+				PARTITION BY customer_id, offer_id
+				ORDER BY time ASC
+			) AS order
+		FROM promotion_received
+		ORDER BY customer_id, offer_id, time
+	),
+	complete AS (
+			SELECT 
+			customer_id,
+			offer_id,
+			time,
+			ROW_NUMBER() OVER(
+				PARTITION BY customer_id, offer_id
+				ORDER BY time ASC
+			) AS order
+		FROM promotion_completed
+		ORDER BY customer_id, offer_id, time
+	)
+SELECT 
+	r.customer_id customer_id, 
+	r.offer_id offer_id,
+	r.time time_received,
+	c.time time_completed,
+	r.order AS order,
+	CASE
+		WHEN c.order IS NULL THEN 0
+		ELSE 1
+	END AS complete_flag
+FROM receive r
+LEFT JOIN complete c
+	ON  r.customer_id = c.customer_id
+	AND r.offer_id = c.offer_id
+	AND r.order = c.order
+;
