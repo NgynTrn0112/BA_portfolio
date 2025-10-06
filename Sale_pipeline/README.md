@@ -1,5 +1,5 @@
 # Sale Pipeline Dashboard
-
+[View Report here](!https://app.powerbi.com/view?r=eyJrIjoiYWIzZDkzYmYtNDc4Mi00OTI4LWJlNWQtNjAyYTUwOWQ4MjNlIiwidCI6IjRlMjA2ZGRmLTNkYzgtNGZlMC1hZGNkLWI5YTQzODY4YzU4YyJ9)
 ## Table of Contents
 1. [Project Background](#project_background)
 2. [Business Objectives](#business_objective)
@@ -9,7 +9,7 @@
 
 ---
 ## Project Background
-Zeno is a fictional technology consulting unicorn, launching from 2024, with a revenue of $35M. The startup offers 4 main IT services for customers from 4 different regions across wide range industries.
+Zeno is a technology consulting unicorn, launching from 2024, with a revenue of $35M. The startup offers 4 main IT services for customers from 4 different regions across wide range industries.
 
 To better understanding its performance, productivity and customer demographic, the company set up analytic solution to give leadership a quick grasp of the status.
 
