@@ -53,7 +53,7 @@ The dashboard is updated up-to **27/09/2025**, highlighting that:
 - The drop rate at each stage fluctuates in the range of 44% to 52%, with the exceptionally high drop of **74.3%** at Closing stage.
 - Hardware and Software remain our spearhead product lines. While Software achieves **44.8%** YOY growth, due to **3.2%** increase in conversion rate, Hardware experiences a **12.6%** loss. However, Hardware still have $273M of prospect value in the pipeline, comparing to just $168M of Software.
 - Each *sale representative* is managing a portfolio of **$40M** to **$55M**
-- *Alice, Emma* and *David* are the leading representatives, as the trio have brought back a total of more than **$10M **value in sale this year. Meanwhile, *Bob* is the *lowest* performer, having closed only **$1.14M** in sales and a conversion rate of only **7.22%**
+- *Alice, Emma* and *David* are the leading representatives, as the trio have brought back a total of more than **$10M** value in sale this year. Meanwhile, *Bob* is the *lowest* performer, having closed only **$1.14M** in sales and a conversion rate of only **7.22%**
 
 ## Data Model
 <div>
@@ -93,4 +93,5 @@ In addition, the **Overview** page provides 2 perspectives: trend in value won a
 
 
 **Table** page mainly serves the representatives with detail of backlog for extraction and value prioritisation.
+
 
