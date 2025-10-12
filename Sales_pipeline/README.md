@@ -47,12 +47,12 @@ To address the objectives, I utilised Power BI to design an interactive 3-pages 
 The dashboard is updated up-to **27/09/2025**, highlighting that:
 - Zeno has achieved **$25M** in sales (**12.0% YOY increase**), **11.2%** conversion rate (**1.1% higher vs PY**), and a sales length of **155 days** (**1.4 days shorter**), though attracting 1.1% YOY less deals.
 - While *North America* and *APAC* achieve substantial **growth**, **$5M** and **$1M** respectively, *EMEA* suffered **$3m** **loss** in sales, surpassed by North America to be the leading region.
-- *New Business*is proportionate for most of sales, with **6.5%** increase in value contradicting to the **9.6%** drop in number of prospects.
+- *New Business* is proportionate for most of sales, with **6.5%** increase in value contradicting to the **9.6%** drop in number of prospects.
 - The majority of the growth is due to Q1 where we did not generate any sales last year because of newly launching. Despite sharing similar pattern, Q2 and Q3 this year experienced lower sales, though having higher prospect number.
 - The drop rate at each stage fluctuates in the range of 44% to 52%, with the exceptionally high drop of **74.3%** at Closing stage.
 - Hardware and Software remain our spearhead product lines. While Software achieves **44.8%** YOY growth, due to **3.2%** increase in conversion rate, Hardware experiences a **12.6%** loss. However, Hardware still have $273M of prospect value in the pipeline, comparing to just $168M of Software.
 - Each *sales representative* is managing a portfolio of **$40M** to **$55M**
-- *Alice, Emma* and *David* are the leading representatives, as the trio have brought back a total of more than **$10M **value in sales this year. Meanwhile, *Bob* is the *lowest* performer, having closed only **$1.14M** in sales and a conversion rate of only **7.22%**
+- *Alice, Emma* and *David* are the leading representatives, as the trio have brought back a total of more than **$10M ** value in sales this year. Meanwhile, *Bob* is the *lowest* performer, having closed only **$1.14M** in sales and a conversion rate of only **7.22%**
 
 ## Data Model
 <div>
@@ -89,5 +89,6 @@ The top bar can be used for slicing and dicing deeper into the data, offering us
 In addition, the **Overview** page provides 2 perspectives: trend in value won and attracted prospects (passing qualified stage).
 
 **Sales Reps** page provide a quick understanding of productivity and backlog of each/all employees from score cards and charts, while the bottom table offer a deep dive into individual contribution.
+
 
 **Table** page mainly serves the representatives with detail of backlog for extraction and value prioritisation.
